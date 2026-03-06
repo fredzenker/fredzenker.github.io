@@ -1,0 +1,100 @@
+baseURL: "https://fredzenker.github.io/" # https://pascalmichaillat.org/hugo-website/
+title: Fred Zenker
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Books
+          url: books/
+          weight: 5 
+        - name: Papers
+          url: papers/
+          weight: 2
+        - name: Courses
+          url: courses/
+          weight: 3
+        - name: Posts
+          url: data/
+          weight: 4 
+
+params:
+    description: "This is Fred Zenker's personal website."
+    author: Fred Zenker
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["posts","cv"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Fred Zenker
+          subtitle: "Hello! I am a postdoctoral researcher in the Department of English Linguistics at TU Braunschweig. My research is primarily concerned with investigating how learners (a) develop implicit knowledge about the morphosyntax of a nonnative language and (b) process sentences in that language in real time. I have experience teaching courses on general linguistics and second language acquisition to both undergraduate and graduate students. I also have a strong background in teaching English to speakers of other languages."
+          imageUrl: "picture.jpg"
+          imageWidth: 180
+          imageHeight: 180
+          buttons:
+            - name: CV
+              url: cv.pdf
+            - name: Posts
+              url: posts/
+
+    socialIcons:
+        - name: Email
+          url: mailto:frederick.zenker@tu-braunschweig.de
+        - name: ORCID
+          url: https://orcid.org/0000-0002-1620-6690
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=3VLuGiwAAAAJ
+        - name: GitHub
+          url: https://github.com/fredzenker
+        - name: OSF
+          url: https://osf.io/user/dqa68
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/frederick-zenker-53b13724/
+
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Fred Zenker"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
